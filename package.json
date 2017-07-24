@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "node-sass": "^4.5.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "redux-promise": "^0.5.3"
