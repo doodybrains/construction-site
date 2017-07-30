@@ -42,6 +42,7 @@ class PostsApi {
       let items = [];
       entries.items.map((content) => {
         var contentFields = {
+          id: content.sys.id,
           title: content.fields.title,
           image:  `http:${content.fields.mainImage.fields.file.url}`
         };

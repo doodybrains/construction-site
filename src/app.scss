@@ -21,20 +21,18 @@ html {
 
   a {
     text-decoration: none;
-    color: #FF1493;
+    color: #000;
   }
 }
 
 .header {
   text-align: center;
   padding: 20px;
-  background: rgba(255,255,255, .7);
   position: fixed;
   left: 0;
   right: 0;
   width: 100%;
   top: 0;
-  z-index: 60;
 
   .home-link {
     display: block;
@@ -72,6 +70,60 @@ html {
       display: block;
       width: 100%;
     }
+  }
+}
+
+.category-posts {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  padding-top: 60px;
+  margin: 0 auto;
+
+  .post.category {
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .image {
+      position: relative;
+      z-index: 10;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .link {
+      position: absolute;
+      top: 50%;
+      animation: rot 18s infinite linear;
+      animation-direction: alternate;
+    }
+
+    &:nth-child(even) {
+      .link {
+        animation: rot 18s infinite linear reverse;
+      }
+    }
+  }
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(10deg)
+             translate(-10px)
+             rotate(120deg);
+  }
+  to {
+    transform: rotate(95deg)
+               translate(-20px)
+               rotate(-125deg);
   }
 }
 

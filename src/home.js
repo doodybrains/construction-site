@@ -11,11 +11,10 @@ class Categories extends Component {
   render() {
     return (
       <div>
-        <div className="all-posts">
+        <div className="category-posts" id="container">
           {this.props.cats.map((post, i) => {
-            console.log(post.toJS());
             return (
-              <Category key={i} title={post.get('title')} image={post.get('image')}/>
+              <Category key={i} id={post.get('id')} title={post.get('title')} image={post.get('image')}/>
             );
           })}
         </div>

@@ -16,7 +16,7 @@ class Post extends Component {
       <div className="post">
         <h2>{this.props.title}</h2>
         {images}
-        <a href={`posts/${this.props.id}`}>link</a>
+        <a href={`posts/${this.props.id}`}><img alt="" src="https://icon.now.sh/arrow"/></a>
       </div>
     );
   }
