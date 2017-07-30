@@ -10,15 +10,16 @@ class Post extends Component {
   render() {
     return (
       <div>
-        <h2>detail</h2>
-        <div className="all-posts">
-          {this.props.post &&
-            <div>
-              <h1>{this.props.post.get('title')}</h1>
-              <p>{this.props.post.get('category')}</p>
+        {this.props.post &&
+          <div>
+            <h2 className="primary-title">{this.props.post.get('title')}</h2>
+            <div className="post-detail-wrapper">
+              <div>
+                <p>category: {this.props.post.get('category')}</p>
+              </div>
             </div>
-          }
-        </div>
+          </div>
+        }
       </div>
     );
   }

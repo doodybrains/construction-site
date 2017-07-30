@@ -5,7 +5,6 @@ const contentfulCreds = createClient({
   accessToken: ''
 });
 
-
 class PostsApi {
   static getPost(id, callback) {
     contentfulCreds.getEntry(id)

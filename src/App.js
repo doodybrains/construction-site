@@ -1,17 +1,18 @@
 import React, {Component} from 'react';
 require('./app.scss');
 
-class App extends Component {
+class app extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>stoodio website (content only)</h2>
-          <div>{this.props.children}</div>
+      <div className="app-wrapper">
+        <div className="header">
+          <a className="home-link" href="/"><h2>stoodio</h2></a>
         </div>
+
+        <div>{this.props.children}</div>
       </div>
     );
   }
 }
 
-export default App;
+export default app;

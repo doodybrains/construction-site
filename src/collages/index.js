@@ -10,9 +10,10 @@ class Collages extends Component {
   render() {
     return (
       <div>
-        <h2>all posts</h2>
+        <h2 className="primary-title">all collages</h2>
         <div className="all-posts">
           {this.props.posts.map((post, i) => {
+
             if (post.get('category') === 'collage') {
               return (
                 <Post key={i} id={post.get('id')} title={post.get('title')} images={post.get('images')}/>

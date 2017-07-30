@@ -11,7 +11,6 @@ class Categories extends Component {
   render() {
     return (
       <div>
-        <h2>all categories</h2>
         <div className="all-posts">
           {this.props.cats.map((post, i) => {
             console.log(post.toJS());

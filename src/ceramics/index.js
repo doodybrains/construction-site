@@ -10,7 +10,7 @@ class Ceramics extends Component {
   render() {
     return (
       <div>
-        <h2>all posts</h2>
+        <h2 className="primary-title">all ceramics</h2>
         <div className="all-posts">
           {this.props.posts.map((post, i) => {
             if (post.get('category') === 'ceramics') {
