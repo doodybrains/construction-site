@@ -51,10 +51,16 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "contentful": "^4.5.0",
+    "immutable": "^3.8.1",
     "node-sass": "^4.5.3",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "redux-promise": "^0.5.3"
+    "react-redux": "^5.0.5",
+    "react-router": "^2.0.1",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "superagent": "^3.5.2"
   },
   "scripts": {
     "start": "node scripts/start.js",

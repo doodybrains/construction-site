@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 require('./app.scss');
 
 class App extends Component {
@@ -7,7 +6,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>New App With Sass</h2>
+          <h2>stoodio website (content only)</h2>
+          <div>{this.props.children}</div>
         </div>
       </div>
     );
