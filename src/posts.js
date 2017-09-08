@@ -36,7 +36,6 @@ class Posts extends Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
