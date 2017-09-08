@@ -6,7 +6,7 @@ class app extends Component {
     return (
       <div className="app-wrapper">
         <div className="header">
-          <a className="home-link" href="/"><h2>stoodio</h2></a>
+          <a className="home-link" href="/"><h2>construction site</h2></a>
         </div>
 
         <div>{this.props.children}</div>

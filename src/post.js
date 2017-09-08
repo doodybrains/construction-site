@@ -1,22 +1,37 @@
 import React, {Component} from 'react';
 
 class Post extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoHeight: 0,
+      videoWidth: 0
+    };
+  }
+
+  componentDidMount() {
+    this._window = window;
+    this.onResize();
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('load', this.onResize);
+  }
+
   render() {
-    const images = this.props.images.map(image => {
-      const sys = image.get('sys');
-      const fields = image.get('fields');
-      const file = fields.get('file');
-      const url = file.get('url');
-      return (
-        <img key={sys.get('id')} alt="" src={`http:${url}`} />
-      );
-    })
     return (
       <div className="post">
-        <h2>{this.props.title}</h2>
-        {images}
+        <a className="quote" href={this.props.quoteUrl} target="_blank">{this.props.quote}</a>
+        <iframe id="video" src={this.props.videoUrl} height={this.state.videoHeight} width={this.state.videoWidth}  frameBorder="0" controls="false"></iframe>
       </div>
     );
+  }
+
+  onResize = () => {
+    const windowWidth = window.innerWidth * 1.25;
+    const windowHeight = window.innerHeight * 1.25;
+    this.setState({
+      videoHeight: windowHeight,
+      videoWidth: windowWidth
+    });
   }
 }
 

@@ -2,21 +2,39 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from './actions/posts-actions';
 import Post from './post';
+import Swiper from 'swiper';
+
 class Posts extends Component {
   componentWillMount() {
     this.props.fetchPosts();
   }
 
+  componentDidUpdate() {
+    new Swiper('.wrap', {
+      direction: 'horizontal',
+      loop: true,
+      autoplay: 6000,
+      slidesPerView: 1,
+      grabCursor: true,
+      longSwipes: false
+    });
+  }
+
   render() {
     return (
       <div>
-        <h2>all posts</h2>
         <div className="all-posts">
-          {this.props.posts.map((post, i) => {
-            return (
-              <Post key={i} title={post.get('title')} images={post.get('images')}/>
-            );
-          })}
+          <div className="swiper-container wrap">
+            <div className="swiper-wrapper">
+              {this.props.posts.map((post, i) => {
+                return (
+                  <div key={i} className="swiper-slide">
+                    <Post title={post.get('name')} videoUrl={post.get('videoUrl')} quote={post.get('quote')} quoteUrl={post.get('quoteUrl')}/>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
       </div>

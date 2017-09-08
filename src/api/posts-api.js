@@ -1,50 +1,22 @@
 import {createClient} from 'contentful';
 
 const contentfulCreds = createClient({
-  space: '',
-  accessToken: ''
+  space: 'an24xfim89fc',
+  accessToken: process.env.REACT_APP_CONTENTFUL_API_KEY
 });
 
 class PostsApi {
-  static getPost(id, callback) {
-    contentfulCreds.getEntry(id)
-    .then(function (content) {
-      var contentFields = {
-        id: content.sys.id,
-        title: content.fields.title,
-        images: content.fields.image,
-        category: content.fields.category
-      };
-      callback(contentFields);
-    })
-  }
-
   static getPosts(callback) {
-    contentfulCreds.getEntries({'content_type': 'smallPost'})
+    contentfulCreds.getEntries({'content_type': 'post'})
     .then(function (entries) {
       let items = [];
       entries.items.map((content) => {
         var contentFields = {
           id: content.sys.id,
-          title: content.fields.title,
-          images: content.fields.image,
-          category: content.fields.category
-        };
-        return items.push(contentFields);
-      });
-      callback(items);
-    })
-  }
-
-  static getCats(callback) {
-    contentfulCreds.getEntries({'content_type': 'homeCategory'})
-    .then(function (entries) {
-      let items = [];
-      entries.items.map((content) => {
-        var contentFields = {
-          id: content.sys.id,
-          title: content.fields.title,
-          image:  `http:${content.fields.mainImage.fields.file.url}`
+          name: content.fields.name,
+          videoUrl: content.fields.videoUrl,
+          quote: content.fields.quote,
+          quoteUrl: content.fields.quoteUrl
         };
         return items.push(contentFields);
       });

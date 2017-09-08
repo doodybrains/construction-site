@@ -1,8 +1,8 @@
 {
-  "name": "stoodio-site",
+  "name": "construction-site",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://doodybrains.github.io/stoodio",
+  "homepage": "https://doodybrains.github.io/construction-site",
   "devDependencies": {
     "autoprefixer": "6.4.1",
     "babel-core": "6.14.0",
@@ -62,7 +62,8 @@
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
-    "superagent": "^3.5.2"
+    "superagent": "^3.5.2",
+    "swiper": "^3.4.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
