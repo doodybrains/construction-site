@@ -16,7 +16,8 @@ class Posts extends Component {
       autoplay: 7000,
       slidesPerView: 1,
       grabCursor: true,
-      longSwipes: false
+      longSwipes: false,
+      effect: 'fade'
     });
   }
 
