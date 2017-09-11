@@ -13,7 +13,7 @@ class Posts extends Component {
     new Swiper('.wrap', {
       direction: 'horizontal',
       loop: true,
-      autoplay: 7000,
+      autoplay: 15000,
       slidesPerView: 1,
       grabCursor: true,
       longSwipes: false,
