@@ -20,7 +20,6 @@ class Post extends Component {
     return (
       <div className="post">
         <a className="quote" href={this.props.quoteUrl} target="_blank">{this.props.quote}</a>
-
       </div>
     );
   }
