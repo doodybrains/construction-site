@@ -20,7 +20,7 @@ class Post extends Component {
     return (
       <div className="post">
         <a className="quote" href={this.props.quoteUrl} target="_blank">{this.props.quote}</a>
-        <iframe id="video" src={this.props.videoUrl} height={this.state.videoHeight} width={this.state.videoWidth}  frameBorder="0" controls="false"></iframe>
+
       </div>
     );
   }
