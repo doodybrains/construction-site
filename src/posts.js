@@ -9,7 +9,7 @@ let playlist = [
     "https://github.com/ronik-design/react-drive-in/blob/master/example/kaledo.mp4?raw=true"
   ],
   [
-    "https://www.dropbox.com/s/345ammdjhz8z1oa/Untitled.mp4"
+    "https://github.com/doodybrains/construction-site/blob/master/public/marcy.mp4?raw=true"
   ],
   [
     "http://raw.githubusercontent.com/ronik-design/react-drive-in/master/example/glacier.mp4"
@@ -30,13 +30,13 @@ class Posts extends Component {
       lazy: true,
       direction: 'horizontal',
       loop: true,
-      autoplay: 12000,
+      autoplay: 7000,
       slidesPerView: 1
     });
 
     this.props.posts.map((post, i) => {
       return (
-        playlist.push("https://www.dropbox.com/s/345ammdjhz8z1oa/Untitled.mp4?dl=0")
+        playlist.push("https://github.com/doodybrains/construction-site/blob/master/public/marcy.mp4?raw=true")
       );
     });
 
