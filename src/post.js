@@ -19,7 +19,7 @@ class Post extends Component {
   render() {
     return (
       <div className="post">
-        <a className="quote" href={this.props.quoteUrl} target="_blank">{this.props.quote}</a>
+      <a className="quote" href={this.props.quoteUrl} target="_blank"><marquee>{this.props.quote}</marquee></a>
       </div>
     );
   }

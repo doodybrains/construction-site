@@ -48,6 +48,7 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+
 .post {
   width: 100%;
   background: black;
@@ -55,12 +56,16 @@ body {
   .quote {
     display: block;
     position: absolute;
-    font-size: 3em;
+    font-size: 1em;
     color: white;
-    top: 60px;
+    top: 45%;
     left: 0;
-    padding: 0 30px;
+    padding: 0;
+    height: 21px;
     text-align: left;
+    background: yellow;
+    color: black;
+    width: 100%;
   }
 }
 

@@ -6,7 +6,7 @@ import Swiper from 'swiper';
 import ReactDriveIn from "react-drive-in";
 let playlist = [
   [
-    "https://github.com/doodybrains/construction-site/blob/master/public/2ndave.mp4?raw=true"
+    "https://github.com/doodybrains/construction-site/blob/master/public/les.mp4?raw=true"
   ],
   [
     "https://github.com/doodybrains/construction-site/blob/master/public/bridge.mp4?raw=true"
@@ -36,7 +36,7 @@ let playlist = [
     "https://github.com/doodybrains/construction-site/blob/master/public/henry2.mp4?raw=true"
   ],
   [
-    "https://github.com/doodybrains/construction-site/blob/master/public/les.mp4?raw=true"
+    "https://github.com/doodybrains/construction-site/blob/master/public/2ndave.mp4?raw=true"
   ],
   [
     "https://github.com/doodybrains/construction-site/blob/master/public/marcy.mp4?raw=true"
@@ -75,7 +75,7 @@ class Posts extends Component {
       lazy: true,
       direction: 'horizontal',
       loop: true,
-      autoplay: 10000,
+      autoplay: 20000,
       slidesPerView: 1,
       fade: true
     });
