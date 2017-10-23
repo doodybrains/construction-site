@@ -6,19 +6,58 @@ import Swiper from 'swiper';
 import ReactDriveIn from "react-drive-in";
 let playlist = [
   [
-    "https://github.com/doodybrains/construction-site/blob/master/public/marcy.mp4?raw=true"
+    "https://github.com/doodybrains/construction-site/blob/master/public/2ndave.mp4?raw=true"
   ],
   [
     "https://github.com/doodybrains/construction-site/blob/master/public/bridge.mp4?raw=true"
   ],
   [
+    "https://github.com/doodybrains/construction-site/blob/master/public/chelsea.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/chinatown.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/downtown.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/ebroadway.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/flatbush.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/greatjones.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/henry.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/henry2.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/les.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/marcy.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/marcy2.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/osborne.mp4?raw=true"
+  ],
+  [
     "https://github.com/doodybrains/construction-site/blob/master/public/quincy.mp4?raw=true"
+  ],
+  [
+    "https://github.com/doodybrains/construction-site/blob/master/public/sixthave.mp4?raw=true"
   ],
   [
     "https://github.com/doodybrains/construction-site/blob/master/public/tribeca.mp4?raw=true"
   ],
   [
-    "https://github.com/doodybrains/construction-site/blob/master/public/les.mp4?raw=true"
+    "https://github.com/doodybrains/construction-site/blob/master/public/varick.mp4?raw=true"
   ]
 ];
 
@@ -36,8 +75,9 @@ class Posts extends Component {
       lazy: true,
       direction: 'horizontal',
       loop: true,
-      autoplay: 7000,
-      slidesPerView: 1
+      autoplay: 10000,
+      slidesPerView: 1,
+      fade: true
     });
   }
 
